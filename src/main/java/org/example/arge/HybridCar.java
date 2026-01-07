@@ -11,7 +11,17 @@ public class HybridCar extends CarSkeleton {
         this.batterySize = batterySize;
         this.cylinders = cylinders;
     }
+    public double getAvgKmPerLitre() {
+        return avgKmPerLitre;
+    }
 
+    public int getBatterySize() {
+        return batterySize;
+    }
+
+    public int getCylinders() {
+        return cylinders;
+    }
     @Override
     public String startEngine() {
         return getName() + " (Hybrid) is switching between battery and gas.";

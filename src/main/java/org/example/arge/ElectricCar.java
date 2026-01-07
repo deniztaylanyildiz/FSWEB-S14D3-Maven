@@ -9,7 +9,13 @@ public class ElectricCar extends CarSkeleton {
         this.avgKmPerCharge = avgKmPerCharge;
         this.batterySize = batterySize;
     }
+    public double getAvgKmPerCharge() {
+        return avgKmPerCharge;
+    }
 
+    public int getBatterySize() {
+        return batterySize;
+    }
     @Override
     public String startEngine() {
         return getName() + " (EV) electronics system is ready. Battery: " + batterySize + "kWh.";

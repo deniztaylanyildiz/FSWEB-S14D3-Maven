@@ -20,4 +20,11 @@ public class GasPoweredCar extends CarSkeleton {
         super.runEngine();
         return getName() + " is driving using gasoline at " + avgKmPerLitre + " km/l.";
     }
+    public double getAvgKmPerLitre() {
+        return avgKmPerLitre;
+    }
+
+    public int getCylinders() {
+        return cylinders;
+    }
 }
